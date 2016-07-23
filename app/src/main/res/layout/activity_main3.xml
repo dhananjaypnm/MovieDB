@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.dhananjay.spiderappdevt3.Main3Activity">
+        <ImageView
+            android:layout_width="300px"
+            android:layout_height="444px"
+            android:src="@drawable/sample"
+            android:id="@+id/poster"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center_horizontal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="Title:"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:id="@+id/title"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="Year:"
+                android:textSize="22sp"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:id="@+id/year"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="Rated:"
+                android:textAlignment="textEnd"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:id="@+id/rated"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="Released:"
+                android:textAlignment="textEnd"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:id="@+id/released"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="Runtime:"
+                android:textSize="22sp"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:id="@+id/runTime"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="Genre:"
+                android:textAlignment="textEnd"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:id="@+id/genre"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="Director:"
+                android:textAlignment="textEnd"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:id="@+id/director"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="Writer:"
+                android:textAlignment="textEnd"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:id="@+id/writer"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="Language:"
+                android:textAlignment="textEnd"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:id="@+id/language"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="Country:"
+                android:textAlignment="textEnd"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:id="@+id/country"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="MetaScore:"
+                android:textAlignment="textEnd"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:id="@+id/metaScore"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:text="ImdbRating:"
+                android:textAlignment="textEnd"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:id="@+id/imdbRating"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
