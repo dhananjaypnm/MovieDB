@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#FF5722"
     android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,29 +13,52 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.dhananjay.spiderappdevt3.Main3Activity">
-        <ImageView
-            android:layout_width="300px"
-            android:layout_height="444px"
-            android:src="@drawable/sample"
-            android:id="@+id/poster"
-            android:layout_marginBottom="30dp"
-            android:layout_gravity="center_horizontal"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:background="#ffffff"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="300px"
+                        android:layout_height="444px"
+                        android:src="@drawable/sample"
+                        android:id="@+id/poster"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_height="wrap_content">
+
             <TextView
                 android:layout_width="0dp"
                 android:text="Title:"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:layout_weight="1"
                 android:textAlignment="textEnd"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3" />
+
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:textSize="22sp"
+                android:paddingLeft="10dp"
                 android:id="@+id/title"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -46,15 +70,16 @@
             <TextView
                 android:layout_width="0dp"
                 android:text="Year:"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:textAlignment="textEnd"
                 android:layout_weight="1"
                 android:layout_height="wrap_content" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:textSize="22sp"
                 android:id="@+id/year"
+                android:paddingLeft="10dp"
                 android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
@@ -66,14 +91,15 @@
                 android:layout_width="0dp"
                 android:text="Rated:"
                 android:textAlignment="textEnd"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:textSize="22sp"
                 android:id="@+id/rated"
+                android:paddingLeft="10dp"
                 android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
@@ -85,13 +111,14 @@
                 android:layout_width="0dp"
                 android:text="Released:"
                 android:textAlignment="textEnd"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:textSize="22sp"
+                android:paddingLeft="10dp"
                 android:id="@+id/released"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -103,14 +130,15 @@
             <TextView
                 android:layout_width="0dp"
                 android:text="Runtime:"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:textAlignment="textEnd"
                 android:layout_weight="1"
                 android:layout_height="wrap_content" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:textSize="22sp"
+                android:paddingLeft="10dp"
                 android:id="@+id/runTime"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -123,12 +151,13 @@
                 android:layout_width="0dp"
                 android:text="Genre:"
                 android:textAlignment="textEnd"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
+                android:paddingLeft="10dp"
                 android:textSize="22sp"
                 android:id="@+id/genre"
                 android:layout_height="wrap_content" />
@@ -142,13 +171,14 @@
                 android:layout_width="0dp"
                 android:text="Director:"
                 android:textAlignment="textEnd"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:textSize="22sp"
+                android:paddingLeft="10dp"
                 android:id="@+id/director"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -161,13 +191,14 @@
                 android:layout_width="0dp"
                 android:text="Writer:"
                 android:textAlignment="textEnd"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:textSize="22sp"
+                android:paddingLeft="10dp"
                 android:id="@+id/writer"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -180,14 +211,15 @@
                 android:layout_width="0dp"
                 android:text="Language:"
                 android:textAlignment="textEnd"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:textSize="22sp"
                 android:id="@+id/language"
+                android:paddingLeft="10dp"
                 android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
@@ -199,14 +231,15 @@
                 android:layout_width="0dp"
                 android:text="Country:"
                 android:textAlignment="textEnd"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:textSize="22sp"
                 android:id="@+id/country"
+                android:paddingLeft="10dp"
                 android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
@@ -218,14 +251,15 @@
                 android:layout_width="0dp"
                 android:text="MetaScore:"
                 android:textAlignment="textEnd"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:textSize="22sp"
                 android:id="@+id/metaScore"
+                android:paddingLeft="10dp"
                 android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
@@ -237,14 +271,15 @@
                 android:layout_width="0dp"
                 android:text="ImdbRating:"
                 android:textAlignment="textEnd"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content" />
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:textSize="22sp"
                 android:id="@+id/imdbRating"
+                android:paddingLeft="10dp"
                 android:layout_height="wrap_content" />
         </LinearLayout>
 

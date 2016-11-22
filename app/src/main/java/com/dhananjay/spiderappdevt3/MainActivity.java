@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity implements Callback<MovieDet
     @Override
     public void onFailure(Call<MovieDetails> call, Throwable t) {
         Log.d(TAG, "onFailure: failed"+t);
+        Toast.makeText(this,"Failed! Make sure you have proper internet connection",Toast.LENGTH_LONG).show();
     }
 
     public void navigate(View view){
@@ -108,11 +109,13 @@ public class MainActivity extends AppCompatActivity implements Callback<MovieDet
             list=dao.queryForEq("title",string);
             if (list.size()==0){
                 Log.d(TAG, "onCreate: not found");
+                Toast.makeText(this,"Downloading",Toast.LENGTH_SHORT).show();
                 MovieDetailsInterface movieDetailsInterface=retrofit.create(MovieDetailsInterface.class);
                 Call<MovieDetails> call =movieDetailsInterface.getDetails(string);
                 call.enqueue(this);
             }else {
-                Toast.makeText(MainActivity.this, "already found", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Already found offline", Toast.LENGTH_SHORT).show();
+                database(new View(this));
             }
         } catch (SQLException e) {
             e.printStackTrace();

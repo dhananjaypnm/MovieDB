@@ -3,16 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="#009688"
     tools:context="com.dhananjay.spiderappdevt3.Main2Activity">
 
     <GridView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/gridView"
         android:numColumns="auto_fit"
         android:layout_alignParentTop="true"
-        android:horizontalSpacing="10sp"
         android:verticalSpacing="10dp"
         android:columnWidth="300px"
         android:stretchMode="spacingWidthUniform"
